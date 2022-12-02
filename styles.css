@@ -1,0 +1,201 @@
+/* A class I apply to those elements which I am currently styling. */
+.current {
+    border: 2px solid goldenrod;
+}
+
+/* Getting the required font */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* Setting up the required colours
+and providing some default styles */
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    font-size: 11.3px;
+}
+@media all and (max-width: 375px) {
+    :root {
+        font-size: 12px;
+    }
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+/* Setting up the main background-image
+and colour for the body element for both mobile and desktop */
+body {
+    background-image: url("images/pattern-background-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+}
+
+@media all and (max-width: 375px) {
+    body {
+        background-image: url("images/pattern-background-mobile.svg");
+    }
+}
+/* Making the card vertically and horizontally centered using flexbox */
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling the main card element */
+.card {
+    min-width: 320px;
+    width: 320px;
+    min-height: 496px;
+    height: 496px;
+    display: flex;
+    flex-direction: column;
+}
+@media all and (max-width: 375px) {
+    .card {
+        height: 516px;
+        min-height: 516px;
+        width: 300px;
+        min-width: 300px;
+    }
+}
+
+/* Giving the music-hero illustration an appropriate size */
+.card>figure {
+    height: 32%;
+}
+.card>figure>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+/* Styling the content section */
+.content {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0 30px;
+    height: 68%;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 4px 10px 32px var(--desaturated-blue);
+}
+/* Providing appropriate space between content elements using margins */
+.content> * {
+    margin: 9px 0;
+}
+/* Styling article */
+.content>article {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Styling the paragraphs and headings of articles */
+p {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.6;
+    color: var(--desaturated-blue);
+}
+h1 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+/* Styling the product plan element */
+.plan {
+    display: flex;
+    height: 75px;
+    padding: 16px 18px;
+    background-color: var(--very-pale-blue);
+    align-items: center;
+    border-radius: 6px;
+}
+h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.plan-details {
+    flex: 3;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px; /* for some left spacing from the music image */
+    
+}
+.price {
+    color: var(--desaturated-blue);
+}
+.plan>figure>img {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+
+}
+.plan>a:hover, .plan>a:active {
+    color: #766cf1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styling the payment button */
+button {
+    height: 35px;
+    background-color: var(--bright-blue);
+    color: white;
+    font-size: 1rem;
+    border-color: var(--bright-blue);
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px var(--pale-blue);
+}
+button:hover, button:active {
+    background-color: #766cf1;
+    border-color: #766cf1;
+}
+@media all and (max-width: 375px) {
+    button {
+        height: 45px;
+    }
+    .content>article {
+        height: 104px
+    }
+    .content {
+        border-radius: 0 0 16px 16px;
+    }
+    .card>figure>img {
+        border-radius: 16px 16px 0 0;
+    }
+    p {
+        line-height: 1.8;
+    }
+}
+.aside {
+    text-align: center;
+}
+a.cancel {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--desaturated-blue);
+}
+a.cancel:active, a.cancel:visited {
+    color: var(--dark-blue);
+    font-weight: 700;
+}
