@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github Pages](https://ak-chp1.github.io/fm_order_summary_component/)
+- Live Site URL: [Github](https://github.com/ak-chp1/fm_order_summary_component)
 
 ## My process
 
@@ -51,4 +51,4 @@ It's box shadow still needs to be fixed
 ## Author
 
 - Name - Aayush Kumar
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@ak-chp1](https://www.frontendmentor.io/profile/ak-chp1)
