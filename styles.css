@@ -32,8 +32,8 @@ and providing some default styles */
 and colour for the body element for both mobile and desktop */
 body {
     background-image: url("images/pattern-background-desktop.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-size: 100% 50vmin;
+    background-repeat: repeat-x; /* To prevent breaking of background on higher resolution display */
     background-color: var(--pale-blue);
 }
 
