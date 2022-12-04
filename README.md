@@ -52,3 +52,7 @@ It's box shadow still needs to be fixed
 
 - Name - Aayush Kumar
 - Frontend Mentor - [@ak-chp1](https://www.frontendmentor.io/profile/ak-chp1)
+
+## Acknowledgements
+
+I am very thankful to [@AdrianoEscarabote](https://www.frontendmentor.io/profile/AdrianoEscarabote) and [@Deevyn9](https://www.frontendmentor.io/profile/Deevyn9) from FrontendMentor on advising me on improving background-image and card width.
